@@ -54,4 +54,20 @@
         </classes>
     </test>
 
+
+    <test name="sizeOfLetterLessThanInkContainer" >
+        <parameter name="inkContainerValue" value="1"/>
+        <parameter name="letterSizeHalfOfContainer" value="0.5"/>
+        <parameter name="word" value="anyWord"/>
+        <parameter name="resultWord" value="an"/>
+
+        <classes>
+            <class name="PenTest" >
+                <methods>
+                    <include name="sizeOfLetterLessThanInkContainer"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>
