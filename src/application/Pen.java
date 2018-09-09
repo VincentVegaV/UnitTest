@@ -1,10 +1,10 @@
 public class Pen {
 	// сколько чернила в ручке
-	private int inkContainerValue = 1000;
+	private int inkContainerValue;
 	// размер букв, которые пишутся ручкой
-	private double sizeLetter = 1.0;
+	private double sizeLetter;
 	// цвет ручки
-	private String color = "BLUE";
+	private String color;
 
     public Pen(int inkContainerValue) {
     	 this.inkContainerValue = inkContainerValue;
