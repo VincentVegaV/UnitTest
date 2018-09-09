@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="GetColorTest" >
+        <parameter name="color" value="RED" />
+        <parameter name="inkDefaultValue" value="1000"/>
+        <parameter name="defaultSizeLetter" value="1.0"/>
+
+        <classes>
+            <class name="PenTest" >
+                <methods>
+                    <include name="testGetColor"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="isWorkReturnsFalse" >
+        <parameter name="zeroInkValue" value="0"/>
+
+        <classes>
+            <class name="PenTest" >
+                <methods>
+                    <include name="isWorkReturnsFalse"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="isWorkReturnsTrue" >
+        <parameter name="GreaterZeroInkValue" value="1"/>
+
+        <classes>
+            <class name="PenTest" >
+                <methods>
+                    <include name="isWorkReturnsTrue"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testWriteMethodNotEnoughInk" >
+        <parameter name="word" value="anyWord"/>
+        <parameter name="inkZeroValue" value="0"/>
+        <parameter name="defaultSizeLetter" value="1.0"/>
+        <parameter name="emptyString" value=""/>
+
+        <classes>
+            <class name="PenTest" >
+                <methods>
+                    <include name="testWriteMethodNotEnoughInk"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
